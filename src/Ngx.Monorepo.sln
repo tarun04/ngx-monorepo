@@ -11,9 +11,76 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{2D72
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservice", "Microservice", "{1B1B51EF-10E6-41DF-9BB2-E84D30FAD27A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Admin", "Admin", "{4E3BB041-7703-4E67-8555-5B117C3C289B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ngx.Monorepo.Microservice.Admin.Api", "Microservice\Admin\Api\Ngx.Monorepo.Microservice.Admin.Api.csproj", "{8C576717-8DFE-4399-B0A1-56805F4B0835}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ngx.Monorepo.Microservice.Admin.Command", "Microservice\Admin\Command\Ngx.Monorepo.Microservice.Admin.Command.csproj", "{FE62AE96-6665-4E0A-AC51-F7C2C8F8CA47}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ngx.Monorepo.Microservice.Admin.Domain", "Microservice\Admin\Domain\Ngx.Monorepo.Microservice.Admin.Domain.csproj", "{8D028FFE-9AC9-4357-8706-E9AE7F4FCF8F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ngx.Monorepo.Microservice.Admin.Infrastructure", "Microservice\Admin\Infrastructure\Ngx.Monorepo.Microservice.Admin.Infrastructure.csproj", "{B2414BFE-62C0-407A-8494-7CE9E48CFA98}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ngx.Monorepo.Microservice.Admin.Migration", "Microservice\Admin\Migration\Ngx.Monorepo.Microservice.Admin.Migration.csproj", "{7EDFBEE3-42BF-46AD-A60C-4653CDDCE5F7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ngx.Monorepo.Microservice.Admin.Query", "Microservice\Admin\Query\Ngx.Monorepo.Microservice.Admin.Query.csproj", "{E5FF18A9-EA80-4DDE-BE9D-FF6E208B6C95}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ngx.Monorepo.Microservice.Admin.Test", "Microservice\Admin\Test\Ngx.Monorepo.Microservice.Admin.Test.csproj", "{97674429-1598-45D8-BE72-17F622DBBD64}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ngx.Monorepo.Gateway.Admin.Api", "Gateway\Admin\Ngx.Monorepo.Gateway.Admin.Api.csproj", "{2D30CEDD-626F-41E7-A206-1D37D5FE5BE2}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C576717-8DFE-4399-B0A1-56805F4B0835}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C576717-8DFE-4399-B0A1-56805F4B0835}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C576717-8DFE-4399-B0A1-56805F4B0835}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C576717-8DFE-4399-B0A1-56805F4B0835}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE62AE96-6665-4E0A-AC51-F7C2C8F8CA47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE62AE96-6665-4E0A-AC51-F7C2C8F8CA47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE62AE96-6665-4E0A-AC51-F7C2C8F8CA47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE62AE96-6665-4E0A-AC51-F7C2C8F8CA47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D028FFE-9AC9-4357-8706-E9AE7F4FCF8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D028FFE-9AC9-4357-8706-E9AE7F4FCF8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D028FFE-9AC9-4357-8706-E9AE7F4FCF8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D028FFE-9AC9-4357-8706-E9AE7F4FCF8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2414BFE-62C0-407A-8494-7CE9E48CFA98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2414BFE-62C0-407A-8494-7CE9E48CFA98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2414BFE-62C0-407A-8494-7CE9E48CFA98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2414BFE-62C0-407A-8494-7CE9E48CFA98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EDFBEE3-42BF-46AD-A60C-4653CDDCE5F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EDFBEE3-42BF-46AD-A60C-4653CDDCE5F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EDFBEE3-42BF-46AD-A60C-4653CDDCE5F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EDFBEE3-42BF-46AD-A60C-4653CDDCE5F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5FF18A9-EA80-4DDE-BE9D-FF6E208B6C95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5FF18A9-EA80-4DDE-BE9D-FF6E208B6C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5FF18A9-EA80-4DDE-BE9D-FF6E208B6C95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5FF18A9-EA80-4DDE-BE9D-FF6E208B6C95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97674429-1598-45D8-BE72-17F622DBBD64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97674429-1598-45D8-BE72-17F622DBBD64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97674429-1598-45D8-BE72-17F622DBBD64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97674429-1598-45D8-BE72-17F622DBBD64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D30CEDD-626F-41E7-A206-1D37D5FE5BE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D30CEDD-626F-41E7-A206-1D37D5FE5BE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D30CEDD-626F-41E7-A206-1D37D5FE5BE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D30CEDD-626F-41E7-A206-1D37D5FE5BE2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4E3BB041-7703-4E67-8555-5B117C3C289B} = {1B1B51EF-10E6-41DF-9BB2-E84D30FAD27A}
+		{8C576717-8DFE-4399-B0A1-56805F4B0835} = {4E3BB041-7703-4E67-8555-5B117C3C289B}
+		{FE62AE96-6665-4E0A-AC51-F7C2C8F8CA47} = {4E3BB041-7703-4E67-8555-5B117C3C289B}
+		{8D028FFE-9AC9-4357-8706-E9AE7F4FCF8F} = {4E3BB041-7703-4E67-8555-5B117C3C289B}
+		{B2414BFE-62C0-407A-8494-7CE9E48CFA98} = {4E3BB041-7703-4E67-8555-5B117C3C289B}
+		{7EDFBEE3-42BF-46AD-A60C-4653CDDCE5F7} = {4E3BB041-7703-4E67-8555-5B117C3C289B}
+		{E5FF18A9-EA80-4DDE-BE9D-FF6E208B6C95} = {4E3BB041-7703-4E67-8555-5B117C3C289B}
+		{97674429-1598-45D8-BE72-17F622DBBD64} = {4E3BB041-7703-4E67-8555-5B117C3C289B}
+		{2D30CEDD-626F-41E7-A206-1D37D5FE5BE2} = {2D72C5BF-3294-4326-9EC5-E4DBC2ECFDF3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA470F24-B9A9-4103-8AAB-5C2CAFD0BD29}
