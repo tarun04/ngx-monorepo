@@ -28,6 +28,12 @@
     "admin-e2e": {
       "tags": [],
       "implicitDependencies": ["admin"]
+    },
+    "shared-ui": {
+      "tags": []
+    },
+    "shared-data-models": {
+      "tags": []
     }
   }
 }

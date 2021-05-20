@@ -1,0 +1,148 @@
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar-container {
+  z-index: 2;
+  height: 64px;
+  background: #ffffff;
+}
+
+.navbar {
+  justify-content: space-between;
+  background: white;
+  height: 64px;
+  padding: 0 12px;
+  position: absolute;
+  z-index: 200;
+  align-items: center;
+  border-bottom: 1px solid #dadce0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  box-shadow: none;
+}
+
+.navbar-brand {
+  text-decoration: none;
+  color: #3c4043;
+  padding-left: 12px;
+}
+
+.navbar-spacer {
+  flex: 1 1 auto;
+}
+
+.navbar-is-mobile .navbar {
+  position: fixed;
+  z-index: 2;
+}
+
+.navbar-sidenav-container {
+  /* When the sidenav is not fixed, stretch the sidenav container to fill the available space.
+  This causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+  flex: 1;
+  background-color: #ffffff;
+}
+
+.navbar-is-mobile .navbar-sidenav-container {
+  /* When the sidenav is fixed, don't constrain the height of the sidenav container. 
+  This allows the `<body>` to be our scrolling element for mobile layouts. */
+  flex: 1 0 auto;
+}
+
+.mat-icon-button {
+  color: #5f6368;
+}
+
+p .mat-icon {
+  vertical-align: middle;
+}
+
+.mat-sidenav {
+  width: 256px;
+}
+
+.mat-drawer-backdrop.mat-drawer-shown {
+  background-color: #ffffff !important;
+}
+
+.mat-drawer-over {
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+}
+
+.mat-nav-list {
+  padding: 24px 0;
+}
+
+.mat-line {
+  max-height: 24px;
+  min-width: 124px;
+}
+
+.sidenav {
+  border-right: none;
+}
+
+.mat-list-item {
+  color: #3c4043;
+  padding-left: 24px;
+  word-break: break-word;
+  word-wrap: break-word;
+  -webkit-box-align: center;
+  align-items: center;
+  letter-spacing: 0.01785714em;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  justify-content: space-between;
+}
+
+a.mat-list-item {
+  border-radius: 0 24px 24px 0;
+  margin-right: 24px;
+  height: 42px !important;
+  width: initial !important;
+}
+
+a.mat-list-item:hover {
+  background: #f1f3f4;
+}
+
+a.mat-list-item.active {
+  background: #e8f0fe;
+  fill: #1a73e8;
+  color: #1a73e8;
+}
+
+a.mat-list-item.active:hover {
+  background: #d2e3fc;
+}
+
+a.mat-list-button {
+  text-decoration: none;
+}
+
+a.mat-list-button:hover {
+  color: #1a73e8;
+}
+
+#push-bottom {
+  position: absolute;
+  bottom: 0;
+  letter-spacing: 0.025em;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1rem;
+  color: #5f6368;
+  padding: 17px 24px 24px;
+}
