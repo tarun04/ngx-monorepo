@@ -34,6 +34,18 @@
     },
     "shared-data-models": {
       "tags": []
+    },
+    "admin-analytics-page": {
+      "tags": []
+    },
+    "admin-crm-page": {
+      "tags": []
+    },
+    "admin-ecommerce-page": {
+      "tags": []
+    },
+    "admin-projects-page": {
+      "tags": []
     }
   }
 }

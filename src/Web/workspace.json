@@ -24,13 +24,8 @@
             "polyfills": "apps/admin/src/polyfills.ts",
             "tsConfig": "apps/admin/tsconfig.app.json",
             "aot": true,
-            "assets": [
-              "apps/admin/src/favicon.ico",
-              "apps/admin/src/assets"
-            ],
-            "styles": [
-              "apps/admin/src/styles.scss"
-            ],
+            "assets": ["apps/admin/src/favicon.ico", "apps/admin/src/assets"],
+            "styles": ["apps/admin/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -91,9 +86,7 @@
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/admin"
-          ],
+          "outputs": ["coverage/apps/admin"],
           "options": {
             "jestConfig": "apps/admin/jest.config.js",
             "passWithNoTests": true
@@ -122,9 +115,7 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/admin-e2e/**/*.{js,ts}"
-            ]
+            "lintFilePatterns": ["apps/admin-e2e/**/*.{js,ts}"]
           }
         }
       }
@@ -137,9 +128,7 @@
       "targets": {
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/shared/ui"
-          ],
+          "outputs": ["coverage/libs/shared/ui"],
           "options": {
             "jestConfig": "libs/shared/ui/jest.config.js",
             "passWithNoTests": true
@@ -164,9 +153,7 @@
       "targets": {
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/shared/data-models"
-          ],
+          "outputs": ["coverage/libs/shared/data-models"],
           "options": {
             "jestConfig": "libs/shared/data-models/jest.config.js",
             "passWithNoTests": true
@@ -178,6 +165,106 @@
             "lintFilePatterns": [
               "libs/shared/data-models/src/**/*.ts",
               "libs/shared/data-models/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "admin-analytics-page": {
+      "projectType": "library",
+      "root": "libs/admin/analytics-page",
+      "sourceRoot": "libs/admin/analytics-page/src",
+      "prefix": "ngx-monorepo",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/admin/analytics-page"],
+          "options": {
+            "jestConfig": "libs/admin/analytics-page/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/admin/analytics-page/src/**/*.ts",
+              "libs/admin/analytics-page/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "admin-crm-page": {
+      "projectType": "library",
+      "root": "libs/admin/crm-page",
+      "sourceRoot": "libs/admin/crm-page/src",
+      "prefix": "ngx-monorepo",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/admin/crm-page"],
+          "options": {
+            "jestConfig": "libs/admin/crm-page/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/admin/crm-page/src/**/*.ts",
+              "libs/admin/crm-page/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "admin-ecommerce-page": {
+      "projectType": "library",
+      "root": "libs/admin/ecommerce-page",
+      "sourceRoot": "libs/admin/ecommerce-page/src",
+      "prefix": "ngx-monorepo",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/admin/ecommerce-page"],
+          "options": {
+            "jestConfig": "libs/admin/ecommerce-page/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/admin/ecommerce-page/src/**/*.ts",
+              "libs/admin/ecommerce-page/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "admin-projects-page": {
+      "projectType": "library",
+      "root": "libs/admin/projects-page",
+      "sourceRoot": "libs/admin/projects-page/src",
+      "prefix": "ngx-monorepo",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/admin/projects-page"],
+          "options": {
+            "jestConfig": "libs/admin/projects-page/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/admin/projects-page/src/**/*.ts",
+              "libs/admin/projects-page/src/**/*.html"
             ]
           }
         }

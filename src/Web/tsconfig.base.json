@@ -18,6 +18,16 @@
       "@ngx-monorepo/shared/ui": ["libs/shared/ui/src/index.ts"],
       "@ngx-monorepo/shared/data-models": [
         "libs/shared/data-models/src/index.ts"
+      ],
+      "@ngx-monorepo/admin/analytics-page": [
+        "libs/admin/analytics-page/src/index.ts"
+      ],
+      "@ngx-monorepo/admin/crm-page": ["libs/admin/crm-page/src/index.ts"],
+      "@ngx-monorepo/admin/ecommerce-page": [
+        "libs/admin/ecommerce-page/src/index.ts"
+      ],
+      "@ngx-monorepo/admin/projects-page": [
+        "libs/admin/projects-page/src/index.ts"
       ]
     }
   },
