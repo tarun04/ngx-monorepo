@@ -68,7 +68,7 @@
       fixedTopGap="56"
       [class.sidenav]="!mobileQuery.matches"
     >
-      <mat-nav-list>
+      <mat-nav-list disableRipple>
         <ng-container *ngFor="let route of routes; let lastItem = last">
           <h3 *ngIf="route.subheading != null" mat-subheader>
             {{ route.subheading }}

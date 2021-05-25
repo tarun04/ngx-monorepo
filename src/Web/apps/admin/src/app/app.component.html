@@ -1,1 +1,5 @@
-<ngx-layout title="Admin" [routes]="routes"></ngx-layout>
+<spinner [loading]="loading" [content]="appContent"></spinner>
+
+<ng-template #appContent>
+  <ngx-layout title="Admin" [routes]="routes"> </ngx-layout>
+</ng-template>

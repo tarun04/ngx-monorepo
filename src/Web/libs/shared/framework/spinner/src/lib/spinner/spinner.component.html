@@ -1,0 +1,12 @@
+<div *ngIf="loading; else contentTemplate">
+  <div class="center-spinner">
+    <mat-progress-spinner
+      mode="indeterminate"
+      diameter="50"
+    ></mat-progress-spinner>
+  </div>
+</div>
+
+<ng-template #contentTemplate>
+  <ng-container *ngTemplateOutlet="content"> </ng-container>
+</ng-template>

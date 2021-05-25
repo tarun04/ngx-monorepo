@@ -36,9 +36,7 @@ export class LayoutComponent implements OnInit, OnDestroy, AfterViewInit {
 
   ngOnInit(): void {}
 
-  ngOnDestroy(): void {
-    throw new Error('Method not implemented.');
-  }
+  ngOnDestroy(): void {}
 
   ngAfterViewInit(): void {
     this.changeDetectorRef.detectChanges();

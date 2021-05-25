@@ -28,6 +28,9 @@
       ],
       "@ngx-monorepo/admin/projects-page": [
         "libs/admin/projects-page/src/index.ts"
+      ],
+      "@ngx-monorepo/shared/framework/spinner": [
+        "libs/shared/framework/spinner/src/index.ts"
       ]
     }
   },

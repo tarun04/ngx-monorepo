@@ -46,6 +46,9 @@
     },
     "admin-projects-page": {
       "tags": []
+    },
+    "shared-framework-spinner": {
+      "tags": []
     }
   }
 }

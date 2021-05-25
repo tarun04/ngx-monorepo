@@ -7,5 +7,6 @@ module.exports = {
     '<rootDir>/libs/admin/crm-page',
     '<rootDir>/libs/admin/ecommerce-page',
     '<rootDir>/libs/admin/projects-page',
+    '<rootDir>/libs/shared/framework/spinner',
   ],
 };

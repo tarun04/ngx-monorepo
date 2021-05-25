@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { RouterModule, Routes } from '@angular/router';
 
+import { SpinnerModule } from '@ngx-monorepo/shared/framework/spinner';
 import { SharedUiModule } from '@ngx-monorepo/shared/ui';
 
 const routes: Routes = [
@@ -49,6 +50,7 @@ const routes: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(routes, { initialNavigation: 'enabled' }),
+    SpinnerModule,
     SharedUiModule,
   ],
   providers: [],

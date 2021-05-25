@@ -269,6 +269,31 @@
           }
         }
       }
+    },
+    "shared-framework-spinner": {
+      "projectType": "library",
+      "root": "libs/shared/framework/spinner",
+      "sourceRoot": "libs/shared/framework/spinner/src",
+      "prefix": "ngx-monorepo",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/framework/spinner"],
+          "options": {
+            "jestConfig": "libs/shared/framework/spinner/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/shared/framework/spinner/src/**/*.ts",
+              "libs/shared/framework/spinner/src/**/*.html"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {
