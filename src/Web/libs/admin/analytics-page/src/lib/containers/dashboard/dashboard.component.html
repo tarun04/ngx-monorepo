@@ -1,1 +1,9 @@
-<p>dashboard works!</p>
+<div class="container">
+  <div class="flex-container" fxLayout="row wrap" fxLayoutGap="10px">
+    <div class="flex-container" fxLayout="column" fxLayoutGap="10px">
+      <div fxFlex>
+        <active-users [activeUsers]="activeUsers$ | async"></active-users>
+      </div>
+    </div>
+  </div>
+</div>

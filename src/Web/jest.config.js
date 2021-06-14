@@ -8,5 +8,8 @@ module.exports = {
     '<rootDir>/libs/admin/ecommerce-page',
     '<rootDir>/libs/admin/projects-page',
     '<rootDir>/libs/shared/framework/spinner',
+    '<rootDir>/libs/shared/admin/services',
+    '<rootDir>/libs/shared/admin/types',
+    '<rootDir>/libs/shared/admin/state/active-users-state',
   ],
 };

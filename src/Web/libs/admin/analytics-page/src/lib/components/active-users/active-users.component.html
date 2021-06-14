@@ -1,0 +1,14 @@
+<mat-card>
+  <mat-card-content>
+    <div class="card-header">
+      Active Users
+      <span class="card-icon">
+        <mat-icon>people_outline</mat-icon>
+      </span>
+    </div>
+    <div class="card-content">{{ activeUsers?.count }}</div>
+    <div class="card-footer">
+      + {{ activeUsers?.percentageChange }} % Since last month
+    </div>
+  </mat-card-content>
+</mat-card>

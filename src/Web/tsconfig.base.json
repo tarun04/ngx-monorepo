@@ -31,6 +31,15 @@
       ],
       "@ngx-monorepo/shared/framework/spinner": [
         "libs/shared/framework/spinner/src/index.ts"
+      ],
+      "@ngx-monorepo/shared/admin/services": [
+        "libs/shared/admin/services/src/index.ts"
+      ],
+      "@ngx-monorepo/shared/admin/types": [
+        "libs/shared/admin/types/src/index.ts"
+      ],
+      "@ngx-monorepo/shared/admin/state/active-users-state": [
+        "libs/shared/admin/state/active-users-state/src/index.ts"
       ]
     }
   },

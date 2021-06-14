@@ -294,6 +294,81 @@
           }
         }
       }
+    },
+    "shared-admin-services": {
+      "projectType": "library",
+      "root": "libs/shared/admin/services",
+      "sourceRoot": "libs/shared/admin/services/src",
+      "prefix": "ngx-monorepo",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/admin/services"],
+          "options": {
+            "jestConfig": "libs/shared/admin/services/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/shared/admin/services/src/**/*.ts",
+              "libs/shared/admin/services/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "shared-admin-types": {
+      "projectType": "library",
+      "root": "libs/shared/admin/types",
+      "sourceRoot": "libs/shared/admin/types/src",
+      "prefix": "ngx-monorepo",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/admin/types"],
+          "options": {
+            "jestConfig": "libs/shared/admin/types/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/shared/admin/types/src/**/*.ts",
+              "libs/shared/admin/types/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "shared-admin-state-active-users-state": {
+      "projectType": "library",
+      "root": "libs/shared/admin/state/active-users-state",
+      "sourceRoot": "libs/shared/admin/state/active-users-state/src",
+      "prefix": "ngx-monorepo",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/admin/state/active-users-state"],
+          "options": {
+            "jestConfig": "libs/shared/admin/state/active-users-state/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/shared/admin/state/active-users-state/src/**/*.ts",
+              "libs/shared/admin/state/active-users-state/src/**/*.html"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {

@@ -1,9 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule, Routes } from '@angular/router';
+import { EffectsModule } from '@ngrx/effects';
+import { StoreModule } from '@ngrx/store';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import * as env from '../environments/environment';
 
 import { AppComponent } from './app.component';
-import { RouterModule, Routes } from '@angular/router';
 
 import { SpinnerModule } from '@ngx-monorepo/shared/framework/spinner';
 import { SharedUiModule } from '@ngx-monorepo/shared/ui';
@@ -49,8 +55,16 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
+    HttpClientModule,
     RouterModule.forRoot(routes, { initialNavigation: 'enabled' }),
     SpinnerModule,
+    StoreModule.forRoot({}),
+    StoreDevtoolsModule.instrument({
+      maxAge: 25, // Retains last 25 states
+      logOnly: env.environment.production, // Restrict extension to log-only mode
+    }),
+    EffectsModule.forRoot([]),
     SharedUiModule,
   ],
   providers: [],

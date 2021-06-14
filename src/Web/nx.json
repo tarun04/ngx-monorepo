@@ -49,6 +49,15 @@
     },
     "shared-framework-spinner": {
       "tags": []
+    },
+    "shared-admin-services": {
+      "tags": []
+    },
+    "shared-admin-types": {
+      "tags": []
+    },
+    "shared-admin-state-active-users-state": {
+      "tags": []
     }
   }
 }
