@@ -14,7 +14,7 @@ namespace Ngx.Monorepo.Framework.Utilities.Validation
     /// </summary>
     /// <typeparam name="TRequest"></typeparam>
     /// <typeparam name="TResponse"></typeparam>
-    public class ValidationBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
+    public class ValidationBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TRequest : IRequest<TResponse>
     {
         private readonly ILogger<ValidationBehavior<TRequest, TResponse>> logger;
         private readonly IEnumerable<IValidator<TRequest>> validators;

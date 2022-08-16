@@ -7,6 +7,7 @@ using Ngx.Monorepo.Framework.Core.Security;
 using Ngx.Monorepo.Framework.Core.Utility;
 using Ngx.Monorepo.Framework.Infrastructure.Extensions;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -137,6 +138,15 @@ namespace Ngx.Monorepo.Framework.Infrastructure
         public Task<object> Send(object request, CancellationToken cancellationToken = default)
         {
             return Task.FromResult<object>(default);
+        }
+        public IAsyncEnumerable<TResponse> CreateStream<TResponse>(IStreamRequest<TResponse> request, CancellationToken cancellationToken = default)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IAsyncEnumerable<object> CreateStream(object request, CancellationToken cancellationToken = default)
+        {
+            throw new NotImplementedException();
         }
     }
 }
